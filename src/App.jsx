@@ -18,12 +18,12 @@ function Navigation(){
     <nav className={`sticky top-0 z-50 ml-2 shadow-md `}>
       <div>
         <div className='flex justify-center'>
-          {section.map((section) => (
-            <button key={section.id} className='px-4 py-2 rounded-lg font-medium bg-amber-500 text-black mr-4 mt-2 transition-all hover:bg-red-400'>
+          {section.map((item) => (
+            <button key={item.id} className='px-4 py-2 rounded-lg font-medium bg-blue-500 text-black mr-4 mt-2 transition-all hover:bg-red-400'>
                 <span>
-                  {section.icon}
+                  {item.icon}
                 </span>
-                {section.label}
+                {item.label}
             </button>
           ))}
         </div>
